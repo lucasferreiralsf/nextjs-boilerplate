@@ -1,0 +1,71 @@
+{
+  "name": "next-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "dev": "cross-env FORCE_COLOR=1 next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "analyze": "cross-env ANALYZE=true yarn build",
+    "postinstall": "npx patch-package -y"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^14.0.2",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@t3-oss/env-nextjs": "^0.7.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "cva": "npm:class-variance-authority@^0.7.0",
+    "next": "14.0.2",
+    "next-compose-plugins": "^2.2.1",
+    "patch-package": "^8.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.0",
+    "@commitlint/config-conventional": "^18.4.0",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "commitizen": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "cz-git": "^1.7.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.2",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2",
+    "postcss": "^8",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "eslint",
+      "npm run format:fix"
+    ],
+    "*.json": [
+      "npm run format:fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  }
+}

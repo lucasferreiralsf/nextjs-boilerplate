@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "eliverlara.andromeda",
+    "formulahendry.auto-rename-tag",
+    "aaron-bond.better-comments",
+    "anseki.vscode-color",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost",
+    "ms-vsliveshare.vsliveshare",
+    "esbenp.prettier-vscode",
+    "gruntfuggly.todo-tree",
+    "chakrounanas.turbo-console-log",
+    "bradlc.vscode-tailwindcss",
+    "naumovs.color-highlight"
+  ]
+}
